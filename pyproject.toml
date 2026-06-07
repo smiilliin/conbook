@@ -1,0 +1,12 @@
+[project]
+name = "conbook"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "openai>=2.36.0",
+    "streamlit>=1.57.0",
+    "python-dotenv>=1.0.0",
+]
