@@ -1,12 +1,23 @@
 import os
 
-import dotenv
-from openai import OpenAI
+try:
+    import dotenv
+except ImportError:
+    dotenv = None
+
+try:
+    from openai import OpenAI
+except ImportError:
+    OpenAI = None
 
 
 def create_client():
-    dotenv.load_dotenv()
+    if dotenv is not None:
+        dotenv.load_dotenv()
     try:
+        if OpenAI is None:
+            return None
+
         return OpenAI(
             base_url="https://openrouter.ai/api/v1",
             api_key=os.getenv("API_KEY") or "",
