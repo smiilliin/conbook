@@ -10,7 +10,7 @@ def render_chat(client) -> None:
         book_title = st.session_state.book_info["title"]
         st.markdown(f"## 💬 *{book_title}* 에 대한 대화")
         if st.session_state.chat_ready:
-            st.caption("현재 채팅 상태: 읽는 중")
+            st.caption("어떤 생각이나 느낌도 좋아요.")
     else:
         st.warning("🚨 책 정보가 없습니다. 먼저 책 정보 입력 페이지로 돌아가 주세요.")
 
@@ -76,23 +76,21 @@ def render_chat(client) -> None:
         "🚀 인사이트 추출": "insight",
     }
     
-    cols = st.columns(5)
     for idx, label in enumerate(actions):
-        with cols[idx]:
-            if st.button(label, key=f"action_{idx}", use_container_width=True):
-                if not st.session_state.book_info.get("title", "").strip():
-                    st.warning("🚨 먼저 책 제목을 입력해 주세요!")
-                elif len(st.session_state.chat_history) < 2:
-                    st.warning("🚨 책에 대한 대화가 최소 한 번 이상 오고 간 뒤에 사용이 가능합니다.")
-                else:
-                    with st.spinner(f"{label} 생성 중입니다..."):
-                        prompt = ACTION_PROMPTS[label]
-                        action_messages = list(st.session_state.messages)
-                        action_messages.append({"role": "user", "content": prompt})
-                        _, action_result = chat(prompt, action_messages, client)
-                            
-                        if "action_result" not in st.session_state:
-                            st.session_state.action_result = {}
-                        st.session_state.action_result[action_keys[label]] = action_result
-                        st.session_state.step = action_steps[label]
-                        st.rerun()
+        if st.button(label, key=f"action_{idx}", use_container_width=False):
+            if not st.session_state.book_info.get("title", "").strip():
+                st.warning("🚨 먼저 책 제목을 입력해 주세요!")
+            elif len(st.session_state.chat_history) < 2:
+                st.warning("🚨 책에 대한 대화가 최소 한 번 이상 오고 간 뒤에 사용이 가능합니다.")
+            else:
+                with st.spinner(f"{label} 생성 중입니다..."):
+                    prompt = ACTION_PROMPTS[label]
+                    action_messages = list(st.session_state.messages)
+                    action_messages.append({"role": "user", "content": prompt})
+                    _, action_result = chat(prompt, action_messages, client)
+                                
+                    if "action_result" not in st.session_state:
+                        st.session_state.action_result = {}
+                    st.session_state.action_result[action_keys[label]] = action_result
+                    st.session_state.step = action_steps[label]
+                    st.rerun()

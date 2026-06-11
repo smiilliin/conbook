@@ -1,9 +1,10 @@
+import json
 import time
 
 import streamlit as st
 
 from modules.chat_client import chat
-from modules.history import load_history_records
+from modules.history import load_history_record, load_history_records
 
 
 ACTION_PROMPTS = {
@@ -179,24 +180,60 @@ def render_history_mindmap_page(client) -> None:
             st.rerun()
         return
 
-    records = load_history_records()
-    record = next((r for r in records if r.get("file_name") == selected_history), None)
-    if not record:
+    payload = load_history_record(selected_history)
+    if not payload:
         st.warning("선택한 과거 기록을 찾을 수 없습니다.")
         if st.button("◀️ 대화로 돌아가기", type="secondary", use_container_width=True):
             st.session_state.step = 1
             st.rerun()
         return
 
-    book_title = record.get("title", "책 제목")
-    book_author = record.get("author", "저자명") or "저자명"
+    summary = payload.get("summary", {}) or {}
+    book_title = summary.get("summary", "책 제목")[:60]
+    book_author = summary.get("author", "저자명") or "저자명"
     st.title(f"{book_title} · {book_author}")
-    st.subheader("🧠 과거 대화 마인드맵")
+    st.subheader("🌐 독서 대화 요약")
+
+    tabs = st.tabs(["📌 요약", "🔎 관심사 & 방향", "🧾 원본 JSON"])
+
+    with tabs[0]:
+        st.markdown(f"**요약:** {summary.get('summary', '요약 데이터가 없습니다.')} ")
+        st.write(f"- 타임스탬프: {summary.get('timestamp', '없음')}")
+        if summary.get("interests"):
+            st.write(f"- 관심사: {', '.join(summary.get('interests', []))}")
+
+    with tabs[1]:
+        interests = payload.get("interests", []) or []
+        if interests:
+            for item in interests:
+                interest = item.get("interest", {}) or {}
+                direction = item.get("direction", {}) or {}
+                title = interest.get("name", "Unnamed Interest")
+                with st.expander(f"🔹 {title}", expanded=False):
+                    tags = interest.get("tags", [])
+                    if tags:
+                        st.write(f"**태그:** {', '.join(tags)}")
+
+                    st.write(f"**방향 요약:** {direction.get('summary', '요약이 없습니다.')} ")
+                    direction_items = direction.get("direction", []) or []
+                    if direction_items:
+                        st.write("**발화 흐름:**")
+                        for step in direction_items:
+                            entity = step.get("entity", "알 수 없음")
+                            description = step.get("description", "")
+                            st.markdown(f"- **{entity}**: {description}")
+                    else:
+                        st.info("세부 발화 흐름 데이터가 없습니다.")
+        else:
+            st.info("관심사/방향 데이터가 없습니다.")
+
+    with tabs[2]:
+        st.json(payload)
 
     mindmap = st.session_state.get("history_mindmap", "")
     if not mindmap:
         with st.spinner("과거 대화 데이터를 분석하고 마인드맵을 생성 중입니다..."):
-            history_text = record.get("chat_text", record.get("summary", ""))
+            history_text = summary.get("summary", "") or json.dumps(payload, ensure_ascii=False)
             prompt = HISTORY_MINDMAP_PROMPT_TEMPLATE.format(history_text=history_text)
             messages = [
                 {
@@ -208,6 +245,7 @@ def render_history_mindmap_page(client) -> None:
             st.session_state.history_mindmap = mindmap
 
     st.write("---")
+    st.subheader("🧭 과거 대화 마인드맵")
     if mindmap:
         st.code(mindmap, language="text")
     else:

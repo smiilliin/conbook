@@ -45,7 +45,7 @@ def render_sidebar() -> None:
 
         st.divider()
 
-        st.subheader("🗂️ 최근 읽은 책")
+        st.subheader("📚 독서 기록")
         if st.button("➕ 새 채팅", use_container_width=True):
             st.session_state.step = 0
             st.session_state.chat_ready = False
