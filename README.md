@@ -1,6 +1,7 @@
 # 📚 Conbook
 
-> Conbook은 대화 내용을 저장하고, 그 안에서 insight를 뽑고, 마지막에 화면으로 보여주는 프로젝트입니다.
+Conbook은 대화 내용을 저장하고, 그 안에서 insight를 뽑고, 마지막에 화면으로 보여주는 프로젝트입니다.
+ 
 ![데모](./assets/demo1.gif)
 ![데모](./assets/demo2.gif)
 
@@ -20,13 +21,13 @@
 
 
 ### 🎨 창의성 
-기존 서비스(노션, 왓챠, 밀리의 서재 등)는 대화가 끝나면 내용이 휘발됩니다. Conbook은 대화 속 인지적 흐름을 추적해 '생각이 어떻게 변해갔는가'를 구조화합니다. 
+>기존 서비스(노션, 왓챠, 밀리의 서재 등)는 대화가 끝나면 내용이 휘발됩니다. Conbook은 대화 속 인지적 흐름을 추적해 '생각이 어떻게 변해갔는가'를 구조화합니다. 
 
 ### ⚙️ 구현 난도
-단순 챗봇을 넘어 summary / interests / direction 3중 JSON 스키마로 발화 데이터를 구조화하고, pyvis 기반 마인드맵 시각화와 인사이트 파이프라인을 Streamlit 위에서 통합 구현했습니다.
+>단순 챗봇을 넘어 summary / interests / direction 3중 JSON 스키마로 발화 데이터를 구조화하고, pyvis 기반 마인드맵 시각화와 인사이트 파이프라인을 Streamlit 위에서 통합 구현했습니다.
 
 ### ✅ 실행 안정성
-JSONL 포맷 기반 로컬 세션 저장으로 데이터 유실을 방지하고, 모듈형 컴포넌트 구조(sidebar / chat / book_tabs / visualization)로 유지보수성을 확보했습니다.
+>JSONL 포맷 기반 로컬 세션 저장으로 데이터 유실을 방지하고, 모듈형 컴포넌트 구조(sidebar / chat / book_tabs / visualization)로 유지보수성을 확보했습니다.
 
 
 ---
