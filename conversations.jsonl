@@ -12,3 +12,35 @@
 {"entity": "51ade425-d966-4a65-8cba-5978ecc564d9_s001", "session_id": "51ade425-d966-4a65-8cba-5978ecc564d9", "role": "assistant", "content": "위대한 개츠비를 읽으셨군요! 개츠비가 떠올리는 그 황량한 빌라와 조용한 풍경, 혹은 제이·개츠비의 비밀스러운 미소 중에서 가장 인상 깊었던 장면이 있나요? 그 장면이 당신에게 어떤 감정이나 생각을 불러일으켰는지도 함께 이야기해볼까요?"}
 {"entity": "b1da3090-b2d4-42a1-8dc7-a4bccfc04273_s000", "session_id": "b1da3090-b2d4-42a1-8dc7-a4bccfc04273", "role": "user", "content": "동해물과 백두산이 마르고 닳도록"}
 {"entity": "b1da3090-b2d4-42a1-8dc7-a4bccfc04273_s001", "session_id": "b1da3090-b2d4-42a1-8dc7-a4bccfc04273", "role": "assistant", "content": "그 구절은 조선시대 한글로 고운 서정시 중 하나인 ‘동해물과 백두산이’에서 따온 문장입니다.  \n혹시 그 시에 담긴 의미나, 다른 조선시대 서정시와의 관계에 대해 더 궁금하신가요? 그래야 함께 부연해 드릴 수 있을 것 같아요."}
+{"entity": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b_s000", "session_id": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b", "role": "user", "content": "오만과 편견을 읽었어"}
+{"entity": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b_s001", "session_id": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b", "role": "assistant", "content": "오만과 편범을 읽으셨다니, 정말 멋진 선택이네요! 인물들의 긴장감과 시대적 그림이 가장 인상적이었나요? 혹시 누구의 입장이나 어떤 장면이 가장 공감이 갔나요?"}
+{"entity": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b_s002", "session_id": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b", "role": "user", "content": "와 정말 오만했겠다"}
+{"entity": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b_s003", "session_id": "423f2267-0e97-4c93-ac2f-8d6bd9dc443b", "role": "assistant", "content": "맞아요, 다스리기 힘든 자만심이죠! 다스력이... 그런 면에서 해리엇이 어떻게 대처하는 걸 보면서 교훈을 얻었나요? 다스리즘이라는 관점에서 다른 문학작품에서도 비슷한 ‘오만’이 나타나길 기다려 보는 건 어떨까요?"}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s000", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "user", "content": "폭풍의 언덕을 읽었어"}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s001", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "assistant", "content": "“폭풍의 언덕”을 읽었다니, 정말 감정이 복잡하시겠어요. 이 소설에서 가장 마음에 남는 장면이나 인물은 누구였나요? 그 경험을 공유해 주시면, 함께 그 이야기가 당신에게 어떤 의미를 가지는지도 탐구해 볼게요."}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s002", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "user", "content": "폭풍에 집이 날아갔어"}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s003", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "assistant", "content": "아, 그럼 비유적으로 말씀하시는 것인지 궁금하네요! “폭풍에 집이 날아갔어”라는 표현이 무슨 상황을 떠올리게 하나요? 그 감정이나 생각을 좀 더 이야기해 주시면, 함께 비슷한 경험이나 해석을 나눠볼게요."}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s004", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "user", "content": ""}
+{"entity": "72244d69-cbf6-4a15-a268-6e49373d7361_s005", "session_id": "72244d69-cbf6-4a15-a268-6e49373d7361", "role": "assistant", "content": "혹시 최근에 겪은 거칠고 예기치 못한 사건이 있었나요? 그 이야기를 조금 더 들려주면, 함께 비슷한 상황에서 어떻게 대응할 수 있을지 생각해 볼 수 있을 것 같아요."}
+{"entity": "89bafff3-e774-4390-a4c1-39ad3fd3fb4e_s000", "session_id": "89bafff3-e774-4390-a4c1-39ad3fd3fb4e", "role": "user", "content": "1984를 읽었어"}
+{"entity": "89bafff3-e774-4390-a4c1-39ad3fd3fb4e_s001", "session_id": "89bafff3-e774-4390-a4c1-39ad3fd3fb4e", "role": "assistant", "content": "‘1984’ 읽으셨다니, 그 책은 마치 미래와 과거가 동시에 엉키는 미로 같지 않나요? 그 디스토피아 세상에서 가장 끌렸던 장면이나 인물은 어떤 게 있었나요? 혹시 그 이야기를 다른 책이나 영화와 비슷하게 느꼈다면 함께 비교해 보는 것도 재미있을 것 같아요."}
+{"entity": "4737eb11-40a6-4c48-b913-1779b1492ceb_s000", "session_id": "4737eb11-40a6-4c48-b913-1779b1492ceb", "role": "user", "content": "달과 6펜스를 읽었어"}
+{"entity": "4737eb11-40a6-4c48-b913-1779b1492ceb_s001", "session_id": "4737eb11-40a6-4c48-b913-1779b1492ceb", "role": "assistant", "content": "“달과 6펜스”를 읽으셨군요! 그 감정과 한계, 저마다의 ‘달’ 같은 희망을 묘사한 곳이었죠. 책에서 가장 인상 깊었던 장면이나, 묘사한 주인공의 의견이 마음에 남은 부분이 있으신가요? 함께 이야기해 보면, 그 안에서 또 다른 의미를 찾아볼 수 있을 것 같아요."}
+{"entity": "2b8bbc7d-d4ad-48e9-b765-461469c8f72a_s000", "session_id": "2b8bbc7d-d4ad-48e9-b765-461469c8f72a", "role": "user", "content": "곰세마리를 읽었어"}
+{"entity": "2b8bbc7d-d4ad-48e9-b765-461469c8f72a_s001", "session_id": "2b8bbc7d-d4ad-48e9-b765-461469c8f72a", "role": "assistant", "content": "‘곰세마리’ 책은 어찌든 특별한 느낌을 주었나요? 그 이야기에서 가장 기억에 남는 장면이나 감정이 있었나요? 혹시 그 작품이 당신에게 어떤 생각이나 느낌을 불러일으켰는지도 듣고 싶어요."}
+{"entity": "fe3e832c-bc40-4b60-8d19-c6904ef02551_s000", "session_id": "fe3e832c-bc40-4b60-8d19-c6904ef02551", "role": "user", "content": "곰다섯마리를 읽었어"}
+{"entity": "fe3e832c-bc40-4b60-8d19-c6904ef02551_s001", "session_id": "fe3e832c-bc40-4b60-8d19-c6904ef02551", "role": "assistant", "content": "곰다섯마리를 읽었구나! 그 소설이 너에게 가장 인상 깊게 다가온 모티프는 뭐였니? 혹시 등장인물들에 대해 더 깊이 탐구해보고 싶은 부분이 있다면 알려줘. 함께 그 이야기를 더 즐겁게 풀어봐요!"}
+{"entity": "0388d10a-ad6a-4da8-914f-836c1828ca4a_s000", "session_id": "0388d10a-ad6a-4da8-914f-836c1828ca4a", "role": "user", "content": "죄와 벌을 읽었어"}
+{"entity": "0388d10a-ad6a-4da8-914f-836c1828ca4a_s001", "session_id": "0388d10a-ad6a-4da8-914f-836c1828ca4a", "role": "assistant", "content": "진정으로요? “죄와 벌”은 돈독히 인간 내면을 탐구한 소설이죠. 가장 인상 깊었던 장면이나 인물이 있나요? 그 부분이 당신에게 어떤 감정을 불러일으켰나요?"}
+{"entity": "03dea0ce-aeee-493d-97dd-8efdcbaf90a9_s000", "session_id": "03dea0ce-aeee-493d-97dd-8efdcbaf90a9", "role": "user", "content": "책을 읽었어"}
+{"entity": "03dea0ce-aeee-493d-97dd-8efdcbaf90a9_s001", "session_id": "03dea0ce-aeee-493d-97dd-8efdcbaf90a9", "role": "assistant", "content": "와, 어떤 책 읽으셨나요? 그 책을 정말 흥미롭게 느낀 점이 있었나요? 혹시 다음에 읽고 싶은 장르가 있으면 공유해 보세요!"}
+{"entity": "e9895545-9ffd-4caf-ad5a-a6d71bc2d67f_s000", "session_id": "e9895545-9ffd-4caf-ad5a-a6d71bc2d67f", "role": "user", "content": "레미제라블을 읽었어"}
+{"entity": "e9895545-9ffd-4caf-ad5a-a6d71bc2d67f_s001", "session_id": "e9895545-9ffd-4caf-ad5a-a6d71bc2d67f", "role": "assistant", "content": "아, 리미제라블을 읽었군요! 가장 인상 깊었던 장면이나 인물은 누구였나요? 혹시 그 이야기를 바탕으로 다른 소설이나 영화와 비교해보고 싶으신가요?"}
+{"entity": "6d9aebf9-4aef-40cf-aebe-6504ea5ce970_s000", "session_id": "6d9aebf9-4aef-40cf-aebe-6504ea5ce970", "role": "user", "content": "오만과 편견을 읽었어"}
+{"entity": "6d9aebf9-4aef-40cf-aebe-6504ea5ce970_s001", "session_id": "6d9aebf9-4aef-40cf-aebe-6504ea5ce970", "role": "assistant", "content": "오만과 편견을 읽었구나! 읽고 나서 가장 인상 깊었던 장면은 뭐야? 그 장면이 네 생각에 어떤 의미를 갖는지, 또는 그 책이 너에게 어떤 새로운 시각을 열어줬는지 궁금해.  ✨"}
+{"entity": "5d849276-6700-4166-825a-ec0503d7698b_s000", "session_id": "5d849276-6700-4166-825a-ec0503d7698b", "role": "user", "content": "폭풍의 언덕을 읽었어"}
+{"entity": "5d849276-6700-4166-825a-ec0503d7698b_s001", "session_id": "5d849276-6700-4166-825a-ec0503d7698b", "role": "assistant", "content": "“폭풍의 언덕”을 읽으셨다니 멋지네요! 그 이야기에서 가장 인상 깊었던 장면이나 캐릭터는 뭐였나요? 혹시 그 작품이 떠오르는 다른 문학 작품이나 감정적 반응이 궁금하셨나요? 🔥📚"}
+{"entity": "4b426118-4d6f-440e-9408-2c7ae2ed5ab3_s000", "session_id": "4b426118-4d6f-440e-9408-2c7ae2ed5ab3", "role": "user", "content": "동물농장을 읽었어"}
+{"entity": "4b426118-4d6f-440e-9408-2c7ae2ed5ab3_s001", "session_id": "4b426118-4d6f-440e-9408-2c7ae2ed5ab3", "role": "assistant", "content": "‘동물농장’을 읽었구요! 속편 같은 비유적 풍자라서 읽는 재미가까요? 혹시 특히 인상 깊었던 장면이나 해석이 있나요, 같이 더 깊이 토론해볼까요?"}
+{"entity": "3a91bb02-738b-4be6-a91d-df98e75340df_s000", "session_id": "3a91bb02-738b-4be6-a91d-df98e75340df", "role": "user", "content": "동물농장을 읽었어", "time": "06/08 20:26:22"}
+{"entity": "3a91bb02-738b-4be6-a91d-df98e75340df_s001", "session_id": "3a91bb02-738b-4be6-a91d-df98e75340df", "role": "assistant", "content": "아, *동물농장*이야! 이 작품에서 가장 인상 깊었던 장면이나 인물은 없었나요?  \n혹은 그 이야기를 읽고 나서 당신이 느낀 정치적 메시지나 인간 본성에 대해 더 이야기 나눠볼까요?", "time": "06/08 20:26:31"}

@@ -25,7 +25,7 @@ def assign_entities(messages: list[dict], session_id: str, exclude_system=True) 
             "session_id": session_id,
             "role": m.get("role", ""),
             "content": m.get("content", ""),
-            "timestamp": m.get("timestamp", ""),
+            "time": m.get("time")
         })
         idx += 1
     return result
